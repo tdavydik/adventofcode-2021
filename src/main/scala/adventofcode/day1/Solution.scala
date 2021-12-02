@@ -2,7 +2,6 @@ package adventofcode.day1
 import adventofcode.Problem
 
 object Part1 extends Problem {
-  override lazy val day = 1
 
   override def solution() = {
     inputInts().sliding(2).map(_.toList).map {
@@ -13,7 +12,6 @@ object Part1 extends Problem {
 }
 
 object Part2 extends Problem {
-  override lazy val day = 1
 
   override def solution() = {
     inputInts().sliding(4).foldLeft(0)((sum, w) => w match {
