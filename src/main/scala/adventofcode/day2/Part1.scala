@@ -1,9 +1,9 @@
-package adventofcode.problem2
+package adventofcode.day2
 
 import adventofcode.Problem
 
-object Main extends Problem {
-  override lazy val problem = "problem2"
+object Part1 extends Problem {
+  override lazy val day = 2
 
   override def solution() = {
     val movement = raw"(\w+)\s(\d+)".r
@@ -21,5 +21,3 @@ object Main extends Problem {
     res._1 * res._2
   }
 }
-
-case class Point(x: Int, y: Int)

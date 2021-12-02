@@ -4,10 +4,10 @@ import scala.collection.Iterator
 import scala.io.{BufferedSource, Source}
 
 trait Problem extends App {
-  val problem: String
+  val day: Int
 
   def inputLines(): Iterator[String] = {
-    val source: BufferedSource = Source.fromResource(s"adventofcode/$problem/input")
+    val source: BufferedSource = Source.fromResource(s"adventofcode/day$day/input")
     source.getLines()
   }
 

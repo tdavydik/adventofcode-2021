@@ -1,8 +1,8 @@
-package adventofcode.problem1
+package adventofcode.day1
 import adventofcode.Problem
 
-object Main extends Problem {
-  override lazy val problem = "problem1"
+object Part1 extends Problem {
+  override lazy val day = 1
 
   override def solution() = {
     inputInts().sliding(2).map(_.toList).map {
